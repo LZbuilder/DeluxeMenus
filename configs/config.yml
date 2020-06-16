@@ -331,7 +331,7 @@ gui_menus:
   bedwarsOptions:
     menu_title: '&aBedWarsOptions'
     open_command: bwgui
-    size: 54
+    size: 27
     open_requirement:
       requirements:
         permission:
@@ -342,106 +342,56 @@ gui_menus:
     items:
       '1':
         material: RED_BED
-        slot: 0
-        display_name: '&SoloBedWars%'
+        slot: 10
+        display_name: 'SoloBedWars'
         lore:
-        - '&aOpen Solo Bedwars Maps'
+        - '&aPlay Solo Bedwars'
         - 'Left OR Right Click'
         left_click_commands:
-        - '[openguimenu] BedwarsSolo'
+        - '[player] bw join Solo'
         - '[close]'
         right_click_commands:
-        - '[openguimenu] BedwarsSolo'
+        - '[player] bw join Solo'
         - '[close]'
       '3':
-        material: DIRT
-        data: 0
+        material: RED_BED
         amount: 2
-        slot: 2
-        priority: 1
-        view_requirement:
-          requirements:
-            permission:
-              type: has permission
-              permission: some.permission
-        display_name: '&bTeleport home'
+        slot: 12
+        display_name: 'DoublesBedWars'
         lore:
-        - '&bClick to teleport'
-        - '&bto your home'
+        - '&aPlay Doubles Bedwars'
+        - 'Left OR Right Click'
         left_click_commands:
+        - '[player] bw join Doubles'
         - '[close]'
         right_click_commands:
-        - '[player] home'
+        - '[player] bw join Doubles'
         - '[close]'
-      '4':
-        material: DIRT
-        data: 0
-        amount: 1
-        slot: 2
-        priority: 2
-        display_name: '&bTeleport to spawn'
+      '5':
+        material: RED_BED
+        amount: 3
+        slot: 14
+        display_name: 'TriplesBedWars'
         lore:
-        - '&bClick to teleport'
-        - '&bto the server spawn'
+        - '&aPlay Triples Bedwars'
+        - 'Left OR Right Click'
         left_click_commands:
-        - '[player] spawn'
-        - '[close]'
-
-  BedwarsSolo:
-    menu_title: '&aBedWarsOptions'
-    open_command: pwgui
-    size: 54
-    open_requirement:
-      requirements:
-        permission:
-          type: has permission
-          permission: some.permission
-          deny_commands:
-          - '[message] You dont have permission to open the example menu'
-    items:
-      '1':
-        material: minecraft:red_bed
-        slot: 0
-        display_name: '&SoloBedWars%'
-        lore:
-        - '&aOpen Solo Bedwars Maps'
-        - ''
-        left_click_commands:
-        - '[openguimenu] BedwarsSolo'
+        - '[player] bw join 3v3v3v3'
         - '[close]'
         right_click_commands:
-        - '[openguimenu] BedwarsSolo'
+        - '[player] bw join 3v3v3v3'
         - '[close]'
-      '2':
-        material: DIRT
-        data: 0
-        amount: 1
-        slot: 1
-        priority: 1
-        view_requirement:
-          requirements:
-            permission:
-              type: has permission
-              permission: some.permission
-        display_name: '&bTeleport home'
+      '7':
+        material: RED_BED
+        amount: 4
+        slot: 16
+        display_name: 'SquadsBedWars'
         lore:
-        - '&bClick to teleport'
-        - '&bto your home'
+        - '&aPlay Squads Bedwars'
+        - 'Left OR Right Click'
         left_click_commands:
+        - '[player] bw join 4v4v4v4'
         - '[close]'
         right_click_commands:
-        - '[player] home'
-        - '[close]'
-      '3':
-        material: DIRT
-        data: 0
-        amount: 1
-        slot: 2
-        priority: 2
-        display_name: '&bTeleport to spawn'
-        lore:
-        - '&bClick to teleport'
-        - '&bto the server spawn'
-        left_click_commands:
-        - '[player] spawn'
+        - '[player] bw join 4v4v4v4'
         - '[close]'
