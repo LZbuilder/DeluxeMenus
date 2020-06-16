@@ -332,13 +332,7 @@ gui_menus:
     menu_title: '&aBedWarsOptions'
     open_command: bwgui
     size: 27
-    open_requirement:
-      requirements:
-        permission:
-          type: has permission
-          permission: some.permission
-          deny_commands:
-          - '[message] You dont have permission to open the example menu'
+
     items:
       '1':
         material: RED_BED
