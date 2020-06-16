@@ -336,6 +336,7 @@ gui_menus:
     items:
       '1':
         material: RED_BED
+        data: 1
         slot: 10
         display_name: 'SoloBedWars'
         lore:
