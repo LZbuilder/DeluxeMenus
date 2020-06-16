@@ -332,11 +332,9 @@ gui_menus:
     menu_title: '&aBedWarsOptions'
     open_command: bwgui
     size: 27
-
     items:
       '1':
         material: RED_BED
-        data: 1
         slot: 10
         display_name: 'SoloBedWars'
         lore:
