@@ -330,7 +330,7 @@ check_updates: true
 gui_menus:
   bedwarsOptions:
     menu_title: '&aBedWarsOptions'
-    open_command: pwgui
+    open_command: bwgui
     size: 54
     open_requirement:
       requirements:
