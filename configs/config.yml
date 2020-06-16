@@ -341,7 +341,7 @@ gui_menus:
           - '[message] You dont have permission to open the example menu'
     items:
       '1':
-        material: minecraft:red_bed
+        material: RED_BED
         slot: 0
         display_name: '&SoloBedWars%'
         lore:
@@ -373,7 +373,7 @@ gui_menus:
         right_click_commands:
         - '[player] home'
         - '[close]'
-      '3':
+      '4':
         material: DIRT
         data: 0
         amount: 1
