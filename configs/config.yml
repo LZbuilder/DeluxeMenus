@@ -328,10 +328,10 @@
 debug: false
 check_updates: true
 gui_menus:
-  example:
-    menu_title: '&aExample GUI menu'
-    open_command: examplemenu
-    size: 9
+  bedwarsOptions:
+    menu_title: '&aBedWarsOptions'
+    open_command: pwgui
+    size: 54
     open_requirement:
       requirements:
         permission:
@@ -341,16 +341,76 @@ gui_menus:
           - '[message] You dont have permission to open the example menu'
     items:
       '1':
-        material: head;%player_name%
+        material: minecraft:red_bed
         slot: 0
-        display_name: '&aHey &f%player_name%'
+        display_name: '&SoloBedWars%'
         lore:
-        - '&aYou opened a GUI menu'
-        - '&aThis menu is just for you!'
+        - '&aOpen Solo Bedwars Maps'
+        - 'Left OR Right Click'
+        left_click_commands:
+        - '[openguimenu] BedwarsSolo'
+        - '[close]'
+        right_click_commands:
+        - '[openguimenu] BedwarsSolo'
+        - '[close]'
+      '3':
+        material: DIRT
+        data: 0
+        amount: 2
+        slot: 2
+        priority: 1
+        view_requirement:
+          requirements:
+            permission:
+              type: has permission
+              permission: some.permission
+        display_name: '&bTeleport home'
+        lore:
+        - '&bClick to teleport'
+        - '&bto your home'
         left_click_commands:
         - '[close]'
         right_click_commands:
-        - '[player] help'
+        - '[player] home'
+        - '[close]'
+      '3':
+        material: DIRT
+        data: 0
+        amount: 1
+        slot: 2
+        priority: 2
+        display_name: '&bTeleport to spawn'
+        lore:
+        - '&bClick to teleport'
+        - '&bto the server spawn'
+        left_click_commands:
+        - '[player] spawn'
+        - '[close]'
+
+  BedwarsSolo:
+    menu_title: '&aBedWarsOptions'
+    open_command: pwgui
+    size: 54
+    open_requirement:
+      requirements:
+        permission:
+          type: has permission
+          permission: some.permission
+          deny_commands:
+          - '[message] You dont have permission to open the example menu'
+    items:
+      '1':
+        material: minecraft:red_bed
+        slot: 0
+        display_name: '&SoloBedWars%'
+        lore:
+        - '&aOpen Solo Bedwars Maps'
+        - ''
+        left_click_commands:
+        - '[openguimenu] BedwarsSolo'
+        - '[close]'
+        right_click_commands:
+        - '[openguimenu] BedwarsSolo'
         - '[close]'
       '2':
         material: DIRT
